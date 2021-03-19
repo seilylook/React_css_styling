@@ -512,7 +512,7 @@ module.exports = function(webpackEnv) {
                     includePaths: [paths.appSrc + "/styles"]
                   },
                   sourceMap: isEnvProduction && shouldUseSourceMap,
-                  prependData: "@import utils;"
+                  prependData: "@import 'utils';"
                 }
               }),
               sideEffects: true
