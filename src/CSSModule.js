@@ -1,10 +1,9 @@
 import React from "react";
-import style from "./CSSModule.module.css";
-import { styles } from "ansi-colors";
+import styles from "./CSSModule.module.css";
 
 const CSSModule = () => {
   return (
-    <div className={styles.wrpper}>
+    <div className={"${styles.wrapper} ${styles.inverted}"}>
       안녕하세요. 저는 <span className="somethig">CSS Module!</span>
     </div>
   );
